@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@layer base {
+
+
+  @layer base {
+    * {
+      @apply m-0 p-0 box-border
+    }
+
+    img {
+      @apply box-content
+    }
+
+    body {
+      @apply bg-accent_maroon text-sm md:text-base font-poppins font-normal text-accent_white h-full m-0 p-0;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      @apply bg-accent_yellow rounded-xl;
+    }
+
+  }
+}
+
+@layer utilities {
+  .no_scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no_scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .main_text_h1 {
+    @apply text-[32px] md:text-[56px] md:leading-normal lg:text-6xl font-semibold font-gilroy leading-[39.62px] lg:leading-[74.28px]
+  }
+
+  .main_text_h2 {
+    @apply md:text-[36px] lg:text-[56px] md:leading-normal text-[24px] font-semibold font-gilroy leading-[29.62px] lg:leading-[56.95px]
+  }
+
+  .main_text_h3 {
+    @apply text-[22px] lg:text-[36px] font-semibold font-gilroy leading-[44px] tracking-[-2%]
+  }
+
+  .main_text_h4 {
+    @apply text-[22px] leading-normal lg:text-[28px] lg:leading-[34.66px] font-normal
+  }
+
+  .main_text_p {
+    @apply lg:text-base text-sm font-normal
+  }
+
+  .main_bg_wrapper_1 {
+    background-image: url('/background_primary.png');
+    background-color: #FFFFFF;
+    @apply lg:bg-center lg:bg-cover
+  }
+}
+
+.contact_bg {
+  background-image: url('/images/contact_bg.png');
+  background-size: cover;
+  background-position: center;
+}

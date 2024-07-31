@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+
+    @layer base {
+        ::-webkit-scrollbar {
+            width: 6px;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            @apply bg-slate-400 rounded-xl;
+        }
+
+    }
+}
+
+@layer utilities {
+    .no_scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no_scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+}

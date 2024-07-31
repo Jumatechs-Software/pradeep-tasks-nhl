@@ -1,0 +1,26 @@
+.lines::after
+{
+  content: " ";
+  display: block;
+  border-top: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;
+  border-radius: 2px;
+}
+
+.development-container {
+  display: flex;
+}
+
+.scrollable {
+  overflow-x: auto;
+  flex-grow: 1;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+/* Add any additional styling as needed */
+

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blog_content_div {
+    @apply font-poppins text-[#5E5E5E]
+}
+
+.blog_content_div ul {
+    margin-left: 24px !important;
+    list-style: disc;
+}
+
+.blog_content_div a {
+    color: blue !important;
+}
+
+.blog_content_div ol {
+    margin-left: 24px !important;
+    list-style: decimal;
+}
+
+.blog_content_div img {
+    display: flex;
+    max-width: 100% !important;
+    height: auto;
+    max-height: 630px !important;
+}
+
+.blog_content_div table,
+.blog_content_div p {
+    margin: 0 0 16px 0;
+}
+
+.blog_content_div table {
+    border: 0;
+    border-collapse: collapse;
+    empty-cells: show;
+    max-width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.blog_content_div tr {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.blog_content_div td,
+.blog_content_div th {
+    user-select: text;
+    -o-user-select: text;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+}
+
+.blog_content_div th,
+.blog_content_div td {
+    box-sizing: border-box;
+    padding: 2px 5px;
+    vertical-align: top;
+}
+
+.blog_content_div td,
+.blog_content_div th {
+    border: 1px solid #ddd;
+}
+
+.floating_menu {
+    @apply w-[120px] px-2 py-3 h-fit hidden group-hover/item:flex rounded-md shadow-lg bg-slate-200 absolute -right-[120px] top-0 backdrop-blur-md
+}
